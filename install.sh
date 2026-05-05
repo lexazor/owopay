@@ -229,7 +229,7 @@ echo -e "${CYAN}========================================${NC}"
 # Hapus instance lama jika ada
 pm2 delete owopay-api 2>/dev/null || true
 
-run_step "Start backend dengan PM2" "pm2 start dist/main.js --name owopay-api"
+run_step "Start backend dengan PM2" "pm2 start dist/src/main.js --name owopay-api"
 run_step "Save PM2 config" "pm2 save"
 
 # Setup PM2 startup (auto-start saat reboot)

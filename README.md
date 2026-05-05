@@ -204,7 +204,7 @@ npx ts-node prisma/seed.ts
 npm run build
 
 # Jalankan dengan PM2
-pm2 start dist/main.js --name owopay-api
+pm2 start dist/src/main.js --name owopay-api
 
 # Simpan config PM2 (agar auto-start saat reboot)
 pm2 save
